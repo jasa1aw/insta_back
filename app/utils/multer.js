@@ -2,9 +2,9 @@ const multer = require('multer');
 
 const storage = multer.diskStorage({
     destination: function(req, file, cb){
-        if(file.mimetype,startWith('image/')){
+        if(file.mimetype.startsWith('image/')){
             cb(null, './public/images/postsImages');
-        }else if(file.mimetype.startWith('video/')){
+        }else if(file.mimetype.startsWith('video/')){
             cb(null, './public/images/stories');
         }else{
             cb(new Error('Invalid file type'))

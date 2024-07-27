@@ -23,7 +23,7 @@ app.use(require('./app/like/routes'));
 
 
 
-const PORT = 3001;
+const PORT = 8000;
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
 });

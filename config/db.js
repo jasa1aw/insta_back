@@ -3,7 +3,6 @@ const {Sequelize} = require('sequelize')
 const db = new Sequelize('insta_back', 'postgres', 'rootAdmin', {
     host: 'localhost',
     dialect: 'postgres',
-    operatorsAliases: false,
     pool: {
         max: 5,
         min: 0,
